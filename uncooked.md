@@ -8,9 +8,4 @@
 
 11. Substring with Concatenation of All Words
 
-12. Sudoku Solver
-
-13. Valid Sudoku
-
-
 

@@ -8,56 +8,7 @@ public:
         {
             return 0;
         }
-        if ( n == 1 )
-        {
-            if ( val >= a[0])
-            {
-                return 1;
-            }
-        }
-
-        if ( n == 2)
-        {
-            if ( val >= a[1])
-            {
-                return 2;
-            }
-
-            if ( val >= a[0])
-            {
-                return 1;
-            }
-            return 0;
-        }
-
-        int start = 0;
-        int end = n -1;
-        int mid = (start + end) / 2;
-        while ( start < end )
-        {
-            if ( a[mid] > val)
-            {
-                end = mid;
-            }
-            else if ( a[mid] <= val)
-            {
-                start = mid;
-            }
-
-            mid = (start + end) / 2;
-        }
-
-        if ( a[mid] > val)
-        {
-            if (mid == 0)
-                return 0;
-            else
-                return mid - 1;
-        }
-        else
-        {
-            return mid;
-        }
+        int front = 0;
 
     }
 

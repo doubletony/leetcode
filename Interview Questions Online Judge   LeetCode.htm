@@ -1,0 +1,2090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="http://www.leetcode.com/onlinejudge"><div style="background:#fff;border:1px solid #999;margin:-1px -1px 0;padding:0;"><div style="background:#ddd;border:1px solid #999;color:#000;font:13px arial,sans-serif;font-weight:normal;margin:12px;padding:8px;text-align:left">This is Google&#39;s cache of <a href="http://www.leetcode.com/onlinejudge" style="text-decoration:underline;color:#00c">http://www.leetcode.com/onlinejudge</a>. It is a snapshot of the page as it appeared on Dec 19, 2012 04:08:42 GMT. The <a href="http://www.leetcode.com/onlinejudge" style="text-decoration:underline;color:#00c">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222" style="text-decoration:underline;color:#00c">Learn more</a><br>Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.<br><br><div style="float:right"><a href="http://webcache.googleusercontent.com/search?q=cache:1aupjF5XpVkJ:www.leetcode.com/onlinejudge&amp;hl=en&amp;tbo=d&amp;gl=us&strip=1" style="text-decoration:underline;color:#00c">Text-only version</a></div>
+<div>&nbsp;</div></div></div><div style="position:relative">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head profile="http://gmpg.org/xfn/11">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Interview Questions Online Judge | LeetCode</title>
+		<link rel="stylesheet" href="http://www.leetcode.com/wp-content/themes/buddyboss-child/style.css" type="text/css" media="screen" />
+
+		
+	<link rel="alternate" type="application/rss+xml" title="LeetCode | Site Wide Activity RSS Feed" href="http://www.leetcode.com/activity/feed/" />
+
+
+		<link rel="pingback" href="http://www.leetcode.com/xmlrpc.php" />		
+		<link rel="shortcut icon" href="http://www.leetcode.com/wp-content/themes/buddyboss-child/_inc/images/favicon.ico" type="image/x-icon">
+		
+		<link rel="alternate" type="application/rss+xml" title="LeetCode &raquo; Feed" href="http://www.leetcode.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="LeetCode &raquo; Comments Feed" href="http://www.leetcode.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="LeetCode &raquo; Interview Questions Online Judge Comments Feed" href="http://www.leetcode.com/onlinejudge/feed" />
+<link rel='stylesheet' id='customized-recent-comments-css'  href='http://www.leetcode.com/wp-content/plugins/customized-recent-comments/css/style.css?ver=3.2.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.leetcode.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/collapsing-archives/collapsFunctions.js?ver=1.7'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_DTheme = {
+	my_favs: "My Favorites",
+	accepted: "Accepted",
+	rejected: "Rejected",
+	show_all_comments: "Show all comments for this thread",
+	show_all: "Show all",
+	comments: "comments",
+	close: "Close",
+	view: "View"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/themes/buddyboss/_inc/global.js?ver=20110729'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.leetcode.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.leetcode.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='LeetCode' href='http://www.leetcode.com' />
+<link rel='prev' title='About Us' href='http://www.leetcode.com/about' />
+<link rel='next' title='Members' href='http://www.leetcode.com/members' />
+<link rel='canonical' href='http://www.leetcode.com/onlinejudge' />
+
+	<script type="text/javascript">var ajaxurl = "http://www.leetcode.com/wp-load.php";</script>
+
+<style type='text/css'>
+    #sidebar span.collapsing.archives {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#sidebar span.monthCount, span.yearCount {text-decoration:none; color:#333}
+#sidebar li.collapsing.archives a.self {font-weight:bold}
+#sidebar ul.collapsing.archives.list ul.collapsing.archives.list:before {content:'';} 
+#sidebar ul.collapsing.archives.list li.collapsing.archives:before {content:'';} 
+#sidebar ul.collapsing.archives.list li.collapsing.archives {list-style-type:none}
+#sidebar ul.collapsing.archives.list li {
+       margin:0 0 0 .8em;
+       text-indent:-1em}
+#sidebar ul.collapsing.archives.list li.collapsing.archives.item:before {content: '\00BB \00A0' !important;} 
+#sidebar ul.collapsing.archives.list li.collapsing.archives .sym {
+   font-size:1.2em;
+   font-family:Monaco, 'Andale Mono', 'FreeMono', 'Courier new', 'Courier', monospace;
+   cursor:pointer;
+    padding-right:15px;}
+#sidebar ul.collapsing.archives.list span.collapsing.archives.collapse .sym {
+    background-image: url(/wp-content/plugins/collapsing-archives/img/list-collapse.gif);
+}
+#sidebar ul.collapsing.archives.list span.collapsing.archives.expand .sym {
+    background-image: url(/wp-content/plugins/collapsing-archives/img/list-expand.gif);
+}
+    </style>
+<!-- Wordpress Popular Posts v2.1.4 -->
+<script type="text/javascript" charset="utf-8">
+    /* <![CDATA[ */				
+	jQuery.post('http://www.leetcode.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '017deff934', id: 370});
+    /* ]]> */
+</script>
+<!-- End Wordpress Popular Posts v2.1.4 -->
+            
+<!-- Wordpress Popular Posts v2.1.4 -->
+<link rel="stylesheet" href="http://www.leetcode.com/wp-content/plugins/wordpress-popular-posts/style/wpp.css" type="text/css" media="screen" />
+<!-- End Wordpress Popular Posts v2.1.4 -->
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+
+	<script type="text/javascript"> jQuery(document).ready( function() { jQuery("a.confirm").click( function() { if ( confirm( 'Are you sure?' ) ) return true; else return false; }); });</script>
+
+	</head>
+
+	<body class="page page-id-370 page-template-default buddyboss-active-pics buddyboss-active-wall" id="bp-default">
+	
+	<!--[if lte IE 6]><script src="http://www.leetcode.com/wp-content/themes/buddyboss/_inc/js/ie6/warning.js"></script><script>window.onload=function(){e("http://www.leetcode.com/wp-content/themes/buddyboss-child/_inc/js/ie6/")}</script><![endif]-->
+
+				
+		<div id="wrapper">
+
+			<div id="header">
+			
+				<div class="padder">
+	
+													
+						<div id="logo">
+								<a href="http://www.leetcode.com" title="Home"><img src="http://www.leetcode.com/wp-content/uploads/2011/10/leetcodelogo.png"/></a>
+						</div>
+
+							
+						<ul class="sf-menu">
+															<li class="page_item page-item-2"><a href="http://www.leetcode.com/about" title="About Us">About Us</a></li>
+<li class="page_item page-item-908"><a href="http://www.leetcode.com/activity" title="Activity">Activity</a></li>
+<li class="page_item page-item-910"><a href="http://www.leetcode.com/forums" title="Forums">Forums</a></li>
+<li class="page_item page-item-909"><a href="http://www.leetcode.com/groups" title="Groups">Groups</a></li>
+<li class="page_item page-item-370 current_page_item"><a href="http://www.leetcode.com/onlinejudge" title="Interview Questions Online Judge">Interview Questions Online Judge</a></li>
+<li class="page_item page-item-907"><a href="http://www.leetcode.com/members" title="Members">Members</a></li>
+													</ul>
+							
+																
+				</div><!-- .padder -->
+					
+					
+			</div><!-- #header -->
+	
+							
+			<div id="container">
+			
+	<div id="content" class="two_column">
+		<div class="padder">
+
+		
+		<div class="page" id="blog-page" role="main">
+
+			
+				<h1 class="pagetitle">Interview Questions Online Judge</h1>
+
+				<div id="post-370" class="post-370 page type-page status-publish hentry">
+
+					<div class="entry">
+
+						<style>
+#problemset a:visited {
+	color: #0000ff;
+}
+#problemset .row-even {
+	padding: 5px 8px;
+	background-color:#FFF;
+	border: 1px solid #fff;
+}
+#problemset .row-odd {
+	padding: 5px 8px;
+	background-color:#F8F8F8;
+	border: 1px solid #F8F8F8;
+}
+#problemset .question-title {
+	cursor: pointer;
+}
+#problemset .hover-in {
+	background-color: #d1e1fa;
+	border: 1px solid #abc7f8;
+}
+#problemset .question-content {
+	display: none;
+	padding-left: 30px;
+}
+#problemset .showspoilers {
+	font-size:11px;
+}
+#problemset .spoilers {
+	display:none;
+}
+#problemset code {
+    background-color: #EEEEEE;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+#problemset p code {
+    padding: 1px 5px;
+}
+</style>
+
+<script type="text/javascript">
+<!--
+// Get the next element node that is not actually a text node.
+// FF considers whitespace between element nodes to be text nodes.
+function next(elem) {
+	do {
+		elem = elem.nextSibling;
+	} while (elem && elem.nodeType != 1);
+	return elem;
+}
+// Show the spoilers and hide the link itself.
+function showSpoilers(node) {
+	var x = node.parentNode; 
+	next(x).style.display="block"; 
+	x.parentNode.removeChild(x);
+}
+jQuery(document).ready(function() {
+	jQuery(".question-title").click(function() {
+		jQuery(this).siblings(".question-content").toggle();
+	});
+	jQuery(".question-title").hover(
+		function() {
+			jQuery(this).addClass("hover-in");
+		}, function() {
+			jQuery(this).removeClass("hover-in");
+		}
+	);
+});
+//--></script>
+<div id="onlinejudge">
+<p>Below are a collection of interview questions for you to practice. Click on the question&#8217;s title to expand the question description. Read the question and try to solve it by clicking on the <i>&#8220;Solve this problem&#8221;</i> link. You may start typing your code in the coding panel (bottom right side).</p>
+<p>Once done, run your solution against the judge&#8217;s secret input to see if you&#8217;ve solved it correctly. It&#8217;s that easy!</p>
+<p style="margin-top:10px">
+Happy coding and remember to <b><a href="http://twitter.com/#!/LeetCode">Follow</a></b> or <b><a href="http://www.facebook.com/LeetCode">Like LeetCode</a></b> and get the <b><font color="red">latest update</font></b> when a new question is added!</p>
+<ul>
+<li><a href="http://www.facebook.com/LeetCode"><img src="http://www.leetcode.com/wp-content/uploads/2012/09/facebook-like-icon.png" style="vertical-align:text-top;" /> @Facebook</a></li>
+<li><a href="http://twitter.com/#!/LeetCode"><img src="http://www.leetcode.com/wp-content/uploads/2012/09/twitter-follow-icon.png" style="vertical-align:text-top;" /> @Twitter</a></li>
+</ul>
+</p>
+<p><b><font color="red">IMPORTANT:</font></b><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <i>Solution</i> object is instantiated only <i>once</i> and is reused for each test case input. <b><i><font color="red">When declaring a class member variable, be extra cautious and remember to reset the variable!</font></i></b></p>
+</p>
+<div style="background-color: #FFDCDC;border: 1px solid #BB0011;padding: 6px 8px;margin-bottom:10px">Questions List: <i>(Click on title to expand)</i></div>
+<div id="problemset"><div><div id='question_15' class='row-even question-title'><b>3Sum</b></div><div class='row-even question-content'><p>Given an array <i>S</i> of <i>n</i> integers, are there elements <i>a</i>, <i>b</i>, <i>c</i> in <i>S</i> such that <i>a</i> + <i>b</i> + <i>c</i> = 0? Find all unique triplets in the array which gives the sum of zero.</p>
+
+<p><b>Note:</b><br />
+<ul>
+<li>Elements in a triplet (<i>a</i>,<i>b</i>,<i>c</i>) must be in non-descending order. (ie, <i>a</i> &#8804; <i>b</i> &#8804; <i>c</i>)</li>
+<li>The solution set must not contain duplicate triplets.</li>
+</ul>
+</p>
+
+<pre>
+    For example, given array S = {-1 0 1 2 -1 -4},
+
+    A solution set is:
+    (-1, 0, 1)
+    (-1, -1, 2)
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(15, "3Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_16' class='row-odd question-title'><b>3Sum Closest</b></div><div class='row-odd question-content'><p>Given an array <i>S</i> of <i>n</i> integers, find three integers in <i>S</i> such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.</p>
+
+<pre>
+    For example, given array S = {-1 2 1 -4}, and target = 1.
+
+    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(16, "3Sum Closest"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_18' class='row-even question-title'><b>4Sum</b></div><div class='row-even question-content'><p>Given an array <i>S</i> of <i>n</i> integers, are there elements <i>a</i>, <i>b</i>, <i>c</i>, and <i>d</i> in <i>S</i> such that <i>a</i> + <i>b</i> + <i>c</i> + <i>d</i> = target? Find all unique quadruplets in the array which gives the sum of target.</p>
+
+<p><b>Note:</b><br />
+<ul>
+<li>Elements in a quadruplet (<i>a</i>,<i>b</i>,<i>c</i>,<i>d</i>) must be in non-descending order. (ie, <i>a</i> ≤ <i>b</i> ≤ <i>c</i> ≤ <i>d</i>)</li>
+<li>The solution set must not contain duplicate quadruplets.</li>
+</ul>
+</p>
+
+<pre>
+    For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
+
+    A solution set is:
+    (-1,  0, 0, 1)
+    (-2, -1, 1, 2)
+    (-2,  0, 0, 2)
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(18, "4Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_67' class='row-odd question-title'><b>Add Binary</b></div><div class='row-odd question-content'><p>
+Given two binary strings, return their sum (also a binary string).
+</p>
+
+<p>
+For example,<br />
+a = <code>"11"</code><br />
+b = <code>"1"</code><br />
+Return <code>"100"</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(67, "Add Binary"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_2' class='row-even question-title'><b>Add Two Numbers</b></div><div class='row-even question-content'><p>You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
+<p style="font-family:monospace">
+<b>Input:</b> (2 -> 4 -> 3) + (5 -> 6 -> 4)<br />
+<b>Output:</b> 7 -> 0 -> 8</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(2, "Add Two Numbers"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_49' class='row-odd question-title'><b>Anagrams</b></div><div class='row-odd question-content'><p>Given an array of strings, return all groups of strings that are anagrams.
+</p>
+
+<p>Note: All inputs will be in lower-case.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(49, "Anagrams"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_110' class='row-even question-title'><b>Balanced Binary Tree</b></div><div class='row-even question-content'><p>Given a binary tree, determine if it is height-balanced.
+</p>
+
+<p>
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of <i>every</i> node never differ by more than 1.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(110, "Balanced Binary Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_121' class='row-odd question-title'><b>Best Time to Buy and Sell Stock</b></div><div class='row-odd question-content'><p>Say you have an array for which the <i>i</i><sup>th</sup> element is the price of a given stock on day <i>i</i>.</p>
+
+<p>If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(121, "Best Time to Buy and Sell Stock"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_122' class='row-even question-title'><b>Best Time to Buy and Sell Stock II</b></div><div class='row-even question-content'><p>Say you have an array for which the <i>i</i><sup>th</sup> element is the price of a given stock on day <i>i</i>.</p>
+
+<p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(122, "Best Time to Buy and Sell Stock II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_123' class='row-odd question-title'><b>Best Time to Buy and Sell Stock III</b></div><div class='row-odd question-content'><p>Say you have an array for which the <i>i</i><sup>th</sup> element is the price of a given stock on day <i>i</i>.</p>
+
+<p>Design an algorithm to find the maximum profit. You may complete at most <i>two</i> transactions.</p>
+
+<p><b>Note:</b><br />
+You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(123, "Best Time to Buy and Sell Stock III"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_94' class='row-even question-title'><b>Binary Tree Inorder Traversal</b></div><div class='row-even question-content'><p>Given a binary tree, return the <i>inorder</i> traversal of its nodes' values.</p>
+
+<p>
+For example:<br />
+Given binary tree <code>{1,#,2,3}</code>,<br />
+<pre>
+   1
+    \
+     2
+    /
+   3
+</pre>
+</p>
+<p>
+return <code>[1,3,2]</code>.
+</p>
+
+<p><b>Note:</b> Recursive solution is trivial, could you do it iteratively?</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(94, "Binary Tree Inorder Traversal"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_102' class='row-odd question-title'><b>Binary Tree Level Order Traversal</b></div><div class='row-odd question-content'><p>Given a binary tree, return the <i>level order</i> traversal of its nodes' values. (ie, from left to right, level by level).</p>
+
+<p>
+For example:<br />
+Given binary tree <code>{3,9,20,#,#,15,7}</code>,<br />
+<pre>
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</pre>
+</p>
+<p>
+return its level order traversal as:<br />
+<pre>
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+</pre>
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(102, "Binary Tree Level Order Traversal"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_107' class='row-even question-title'><b>Binary Tree Level Order Traversal II</b></div><div class='row-even question-content'><p>Given a binary tree, return the <i>bottom-up level order</i> traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).</p>
+
+<p>
+For example:<br />
+Given binary tree <code>{3,9,20,#,#,15,7}</code>,<br />
+<pre>
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</pre>
+</p>
+<p>
+return its bottom-up level order traversal as:<br />
+<pre>
+[
+  [15,7]
+  [9,20],
+  [3],
+]
+</pre>
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(107, "Binary Tree Level Order Traversal II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_124' class='row-odd question-title'><b>Binary Tree Maximum Path Sum</b></div><div class='row-odd question-content'><p>
+Given a binary tree, find the maximum path sum.
+</p>
+
+<p>
+The path may start and end at any node in the tree.
+</p>
+
+<p>
+For example:<br />
+Given the below binary tree,
+<pre>
+       1
+      / \
+     2   3
+</pre>
+</p>
+<p>
+Return <code>6</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(124, "Binary Tree Maximum Path Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_103' class='row-even question-title'><b>Binary Tree Zigzag Level Order Traversal</b></div><div class='row-even question-content'><p>Given a binary tree, return the <i>zigzag level order</i> traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).</p>
+
+<p>
+For example:<br />
+Given binary tree <code>{3,9,20,#,#,15,7}</code>,<br />
+<pre>
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</pre>
+</p>
+<p>
+return its zigzag level order traversal as:<br />
+<pre>
+[
+  [3],
+  [20,9],
+  [15,7]
+]
+</pre>
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(103, "Binary Tree Zigzag Level Order Traversal"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_70' class='row-odd question-title'><b>Climbing Stairs</b></div><div class='row-odd question-content'><p>You are climbing a stair case. It takes <i>n</i> steps to reach to the top.</p>
+
+<p>Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(70, "Climbing Stairs"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_39' class='row-even question-title'><b>Combination Sum</b></div><div class='row-even question-content'><p>
+Given a set of candidate numbers (<b><i>C</i></b>) and a target number (<b><i>T</i></b>), find all unique combinations in <b><i>C</i></b> where the candidate numbers sums to <b><i>T</i></b>. 
+</p>
+
+<p>The <b>same</b> repeated number may be chosen from <b><i>C</i></b> unlimited number of times.
+</p>
+
+<p><b>Note:</b><br />
+<ul>
+<li>All numbers (including target) will be positive integers.</li>
+<li>Elements in a combination (<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, … , <i>a</i><sub>k</sub>) must be in non-descending order. (ie, <i>a</i><sub>1</sub> ≤ <i>a</i><sub>2</sub> ≤ … ≤ <i>a</i><sub>k</sub>).</li>
+<li>The solution set must not contain duplicate combinations.</li>
+</ul>
+</p>
+
+<p>
+For example, given candidate set <code>2,3,6,7</code> and target <code>7</code>, <br />
+A solution set is: <br />
+<code>[7]</code> <br />
+<code>[2, 2, 3]</code> <br />
+</p>
+<a href='#' onclick='clearSavedJudgeCode(); setJudge(39, "Combination Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_40' class='row-odd question-title'><b>Combination Sum II</b></div><div class='row-odd question-content'><p>
+Given a collection of candidate numbers (<b><i>C</i></b>) and a target number (<b><i>T</i></b>), find all unique combinations in <b><i>C</i></b> where the candidate numbers sums to <b><i>T</i></b>.
+</p>
+
+<p>Each number in <b><i>C</i></b> may only be used <b>once</b> in the combination.
+</p>
+<p><b>Note:</b><br />
+<ul>
+<li>All numbers (including target) will be positive integers.</li>
+<li>Elements in a combination (<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, … , <i>a</i><sub>k</sub>) must be in non-descending order. (ie, <i>a</i><sub>1</sub> ≤ <i>a</i><sub>2</sub> ≤ … ≤ <i>a</i><sub>k</sub>).</li>
+<li>The solution set must not contain duplicate combinations.</li>
+</ul>
+</p>
+
+<p>
+For example, given candidate set <code>10,1,2,7,6,1,5</code> and target <code>8</code>, <br />
+A solution set is: <br />
+<code>[1, 7]</code> <br />
+<code>[1, 2, 5]</code> <br />
+<code>[2, 6]</code> <br />
+<code>[1, 1, 6]</code> <br />
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(40, "Combination Sum II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_77' class='row-even question-title'><b>Combinations</b></div><div class='row-even question-content'><p>
+Given two integers <i>n</i> and <i>k</i>, return all possible combinations of <i>k</i> numbers out of 1 ... <i>n</i>.
+</p>
+<p>
+For example,<br />
+If <i>n</i> = 4 and <i>k</i> = 2, a solution is:
+</p>
+
+<pre>
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(77, "Combinations"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_106' class='row-odd question-title'><b>Construct Binary Tree from Inorder and Postorder Traversal</b></div><div class='row-odd question-content'><p>Given inorder and postorder traversal of a tree, construct the binary tree.</p>
+
+<p><b>Note:</b><br />
+You may assume that duplicates do not exist in the tree.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(106, "Construct Binary Tree from Inorder and Postorder Traversal"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_105' class='row-even question-title'><b>Construct Binary Tree from Preorder and Inorder Traversal</b></div><div class='row-even question-content'><p>Given preorder and inorder traversal of a tree, construct the binary tree.</p>
+
+<p><b>Note:</b><br />
+You may assume that duplicates do not exist in the tree.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(105, "Construct Binary Tree from Preorder and Inorder Traversal"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_11' class='row-odd question-title'><b>Container With Most Water</b></div><div class='row-odd question-content'><p>Given <i>n</i> non-negative integers <i>a<sub>1</sub></i>, <i>a<sub>2</sub></i>, ..., <i>a<sub>n</sub></i>, where each represents a point at coordinate (<i>i</i>, <i>a<sub>i</sub></i>). <i>n</i> vertical lines are drawn such that the two endpoints of line <i>i</i> is at (<i>i</i>, <i>a<sub>i</sub></i>) and (<i>i</i>, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+</p>
+<p>Note: You may not slant the container.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(11, "Container With Most Water"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_108' class='row-even question-title'><b>Convert Sorted Array to Binary Search Tree</b></div><div class='row-even question-content'><p>Given an array where elements are sorted in ascending order, convert it to a height balanced BST.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(108, "Convert Sorted Array to Binary Search Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_109' class='row-odd question-title'><b>Convert Sorted List to Binary Search Tree</b></div><div class='row-odd question-content'><p>Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(109, "Convert Sorted List to Binary Search Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_38' class='row-even question-title'><b>Count and Say</b></div><div class='row-even question-content'><p>The count-and-say sequence is the sequence of integers beginning as follows:<br />
+<code>1, 11, 21, 1211, 111221, ...</code>
+</p>
+
+<p>
+<code>1</code> is read off as <code>"one 1"</code> or <code>11</code>.<br />
+<code>11</code> is read off as <code>"two 1s"</code> or <code>21</code>.<br />
+<code>21</code> is read off as <code>"one 2</code>, then <code>one 1"</code> or <code>1211</code>.<br />
+</p>
+
+<p>
+Given an integer <i>n</i>, generate the <i>n</i><sup>th</sup> sequence.
+</p>
+
+<p>
+Note: The sequence of integers will be represented as a string.
+</p>
+<a href='#' onclick='clearSavedJudgeCode(); setJudge(38, "Count and Say"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_91' class='row-odd question-title'><b>Decode Ways</b></div><div class='row-odd question-content'><p>
+A message containing letters from <code>A-Z</code> is being encoded to numbers using the following mapping:
+</p>
+
+<pre>
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+</pre>
+
+<p>
+Given an encoded message containing digits, determine the total number of ways to decode it.
+</p>
+
+<p>
+For example,<br />
+Given encoded message <code>"12"</code>,
+it could be decoded as <code>"AB"</code> (1 2) or <code>"L"</code> (12).
+</p>
+
+<p>
+The number of ways decoding <code>"12"</code> is 2.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(91, "Decode Ways"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_115' class='row-even question-title'><b>Distinct Subsequences</b></div><div class='row-even question-content'><p>
+Given a string <b>S</b> and a string <b>T</b>, count the number of distinct subsequences of <b>T</b> in <b>S</b>.
+</p>
+
+<p>
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, <code>"ACE"</code> is a subsequence of <code>"ABCDE"</code> while <code>"AEC"</code> is not).
+</p>
+
+<p>
+Here is an example:<br />
+<b>S</b> = <code>"rabbbit"</code>, <b>T</b> = <code>"rabbit"</code>
+</p>
+<p>
+Return <code>3</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(115, "Distinct Subsequences"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_29' class='row-odd question-title'><b>Divide Two Integers</b></div><div class='row-odd question-content'><p>
+Divide two integers without using multiplication, division and mod operator.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(29, "Divide Two Integers"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_72' class='row-even question-title'><b>Edit Distance</b></div><div class='row-even question-content'><p>
+Given two words <i>word1</i> and <i>word2</i>, find the minimum number of steps required to convert <i>word1</i> to <i>word2</i>. (each operation is counted as 1 step.)
+</p>
+
+<p>
+You have the following 3 operations permitted on a word:
+</p>
+
+<p>
+a) Insert a character<br />
+b) Delete a character<br />
+c) Replace a character<br />
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(72, "Edit Distance"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_41' class='row-odd question-title'><b>First Missing Positive</b></div><div class='row-odd question-content'><p>
+Given an unsorted integer array, find the first missing positive integer.
+</p>
+
+<p>
+For example,<br />
+Given <code>[1,2,0]</code> return <code>3</code>,<br />
+and <code>[3,4,-1,1]</code> return <code>2</code>.
+</p>
+
+<p>
+Your algorithm should run in <i>O</i>(<i>n</i>) time and uses constant space.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(41, "First Missing Positive"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_114' class='row-even question-title'><b>Flatten Binary Tree to Linked List</b></div><div class='row-even question-content'><p>
+Given a binary tree, flatten it to a linked list in-place.
+</p>
+
+<p>
+For example,<br />
+Given
+<pre>
+         1
+        / \
+       2   5
+      / \   \
+     3   4   6
+</pre>
+</p>
+
+The flattened tree should look like:<br />
+<pre>
+   1
+    \
+     2
+      \
+       3
+        \
+         4
+          \
+           5
+            \
+             6
+</pre>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show hints.</a></p>
+
+<div class="spoilers"><b>Hints:</b>
+<p>If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(114, "Flatten Binary Tree to Linked List"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_22' class='row-odd question-title'><b>Generate Parentheses</b></div><div class='row-odd question-content'><p>
+Given <i>n</i> pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+</p>
+
+<p>
+For example, given <i>n</i> = 3, a solution set is:
+</p>
+<p>
+<code>"((()))", "(()())", "(())()", "()(())", "()()()"</code>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(22, "Generate Parentheses"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_89' class='row-even question-title'><b>Gray Code</b></div><div class='row-even question-content'><p>The gray code is a binary numeral system where two successive values differ in only one bit.</p>
+
+<p>Given a non-negative integer <i>n</i> representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.</p>
+
+<p>For example, given <i>n</i> = 2, return <code>[0,1,3,2]</code>. Its gray code sequence is:</p>
+<pre>
+00 - 0
+01 - 1
+11 - 3
+10 - 2
+</pre>
+
+<p><b>Note:</b><br />
+For a given <i>n</i>, a gray code sequence is not uniquely defined.
+</p>
+<p>For example, <code>[0,2,3,1]</code> is also a valid gray code sequence according to the above definition.</p>
+
+<p>For now, the judge is able to judge based on one instance of gray code sequence. Sorry about that.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(89, "Gray Code"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_28' class='row-odd question-title'><b>Implement strStr()</b></div><div class='row-odd question-content'><p>
+Implement strStr().
+</p>
+<p>
+Returns a pointer to the first occurrence of needle in haystack, or <b>null</b> if needle is not part of haystack.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(28, "Implement strStr()"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_57' class='row-even question-title'><b>Insert Interval</b></div><div class='row-even question-content'><p>Given a set of <i>non-overlapping</i> intervals, insert a new interval into the intervals (merge if necessary).</p>
+
+<p>You may assume that the intervals were initially sorted according to their start times.</p>
+
+<p>
+<b>Example 1:</b><br />
+Given intervals <code>[1,3],[6,9]</code>, insert and merge <code>[2,5]</code> in as <code>[1,5],[6,9]</code>.
+</p>
+
+<p>
+<b>Example 2:</b><br />
+Given <code>[1,2],[3,5],[6,7],[8,10],[12,16]</code>, insert and merge <code>[4,9]</code> in as <code>[1,2],[3,10],[12,16]</code>.
+</p>
+
+<p>
+This is because the new interval <code>[4,9]</code> overlaps with <code>[3,5],[6,7],[8,10]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(57, "Insert Interval"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_12' class='row-odd question-title'><b>Integer to Roman</b></div><div class='row-odd question-content'><p>Given an integer, convert it to a roman numeral.
+</p>
+
+<p>Input is guaranteed to be within the range from 1 to 3999.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(12, "Integer to Roman"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_97' class='row-even question-title'><b>Interleaving String</b></div><div class='row-even question-content'><p>
+Given <i>s1</i>, <i>s2</i>, <i>s3</i>, find whether <i>s3</i> is formed by the interleaving of <i>s1</i> and <i>s2</i>.
+</p>
+
+<p>
+For example,<br />
+Given:<br />
+<i>s1</i> = <code>"aabcc"</code>,<br />
+<i>s2</i> = <code>"dbbca"</code>,
+</p>
+<p>
+When <i>s3</i> = <code>"aadbbcbcac"</code>, return true.<br />
+When <i>s3</i> = <code>"aadbbbaccc"</code>, return false.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(97, "Interleaving String"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_55' class='row-odd question-title'><b>Jump Game</b></div><div class='row-odd question-content'><p>
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+</p>
+<p>
+Each element in the array represents your maximum jump length at that position. 
+</p>
+<p>
+Determine if you are able to reach the last index.
+</p>
+
+<p>
+For example:<br />
+A = <code>[2,3,1,1,4]</code>, return <code>true</code>.
+</p>
+<p>
+A = <code>[3,2,1,0,4]</code>, return <code>false</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(55, "Jump Game"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_45' class='row-even question-title'><b>Jump Game II</b></div><div class='row-even question-content'><p>
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+</p>
+<p>
+Each element in the array represents your maximum jump length at that position. 
+</p>
+<p>
+Your goal is to reach the last index in the minimum number of jumps.
+</p>
+
+<p>
+For example:<br />
+Given array A = <code>[2,3,1,1,4]</code>
+</p>
+<p>
+The minimum number of jumps to reach the last index is <code>2</code>. (Jump <code>1</code> step from index 0 to 1, then <code>3</code> steps to the last index.)
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(45, "Jump Game II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_84' class='row-odd question-title'><b>Largest Rectangle in Histogram</b></div><div class='row-odd question-content'><p>
+Given <i>n</i> non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
+</p>
+
+<p>
+<img src="http://www.leetcode.com/wp-content/uploads/2012/04/histogram.png" /><br />
+<p style="font-size: 11px">Above is a histogram where width of each bar is 1, given height = <code>[2,1,5,6,2,3]</code>.</p>
+</p>
+
+<p>
+<img src="http://www.leetcode.com/wp-content/uploads/2012/04/histogram_area.png" /><br />
+<p style="font-size: 11px">The largest rectangle is shown in the shaded area, which has area = <code>10</code> unit.</p>
+</p>
+
+<p>
+For example,<br />
+Given height = <code>[2,1,5,6,2,3]</code>,<br />
+return <code>10</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(84, "Largest Rectangle in Histogram"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_58' class='row-even question-title'><b>Length of Last Word</b></div><div class='row-even question-content'><p>Given a string <i>s</i> consists of upper/lower-case alphabets and empty space characters <code>' '</code>, return the length of last word in the string.</p>
+
+<p>If the last word does not exist, return 0.</p>
+
+<p><b>Note:</b> A word is defined as a character sequence consists of non-space characters only.</p>
+
+<p>
+For example, <br />
+Given <i>s</i> = <code>"Hello World"</code>,<br />
+return <code>5</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(58, "Length of Last Word"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_17' class='row-odd question-title'><b>Letter Combinations of a Phone Number</b></div><div class='row-odd question-content'><p>Given a digit string, return all possible letter combinations that the number could represent.
+</p>
+
+<p>
+A mapping of digit to letters (just like on the telephone buttons) is given below.</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png" /></p>
+
+<pre>
+<b>Input:</b>Digit string "23"
+<b>Output:</b> ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+</pre>
+
+<p>
+<b>Note:</b><br />
+Although the above answer is in lexicographical order, your answer could be in any order you want.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(17, "Letter Combinations of a Phone Number"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_14' class='row-even question-title'><b>Longest Common Prefix</b></div><div class='row-even question-content'><p>Write a function to find the longest common prefix string amongst an array of strings.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(14, "Longest Common Prefix"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_5' class='row-odd question-title'><b>Longest Palindromic Substring</b></div><div class='row-odd question-content'><p>Given a string <i>S</i>, find the longest palindromic substring in <i>S</i>. You may assume that the maximum length of <i>S</i> is 1000, and there exists one unique longest palindromic substring.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(5, "Longest Palindromic Substring"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_3' class='row-even question-title'><b>Longest Substring Without Repeating Characters</b></div><div class='row-even question-content'><p>Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(3, "Longest Substring Without Repeating Characters"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_32' class='row-odd question-title'><b>Longest Valid Parentheses</b></div><div class='row-odd question-content'><p>Given a string containing just the characters <code>'('</code> and <code>')'</code>, find the length of the longest valid (well-formed) parentheses substring.
+</p>
+<p>
+For <code>"(()"</code>, the longest valid parentheses substring is <code>"()"</code>, which has length = 2.
+</p>
+<p>
+Another example is <code>")()())"</code>, where the longest valid parentheses substring is <code>"()()"</code>, which has length = 4.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(32, "Longest Valid Parentheses"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_85' class='row-even question-title'><b>Maximal Rectangle</b></div><div class='row-even question-content'><p>
+Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(85, "Maximal Rectangle"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_104' class='row-odd question-title'><b>Maximum Depth of Binary Tree</b></div><div class='row-odd question-content'><p>Given a binary tree, find its maximum depth.</p>
+
+<p>The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(104, "Maximum Depth of Binary Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_53' class='row-even question-title'><b>Maximum Subarray</b></div><div class='row-even question-content'><p>
+Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
+</p>
+<p>
+For example, given the array <code>[&#8722;2,1,&#8722;3,4,&#8722;1,2,1,&#8722;5,4]</code>,<br />
+the contiguous subarray <code>[4,&#8722;1,2,1]</code> has the largest sum = <code>6</code>.
+</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show more practice.</a></p>
+
+<div class="spoilers"><b>More practice:</b>
+
+<p>If you have figured out the O(<i>n</i>) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(53, "Maximum Subarray"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_4' class='row-odd question-title'><b>Median of Two Sorted Arrays</b></div><div class='row-odd question-content'><p>There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(4, "Median of Two Sorted Arrays"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_56' class='row-even question-title'><b>Merge Intervals</b></div><div class='row-even question-content'><p>Given a collection of intervals, merge all overlapping intervals.</p>
+
+<p>
+For example,<br />
+Given <code>[1,3],[2,6],[8,10],[15,18]</code>,<br />
+return <code>[1,6],[8,10],[15,18]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(56, "Merge Intervals"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_23' class='row-odd question-title'><b>Merge k Sorted Lists</b></div><div class='row-odd question-content'><p>
+Merge <i>k</i> sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(23, "Merge k Sorted Lists"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_88' class='row-even question-title'><b>Merge Sorted Array</b></div><div class='row-even question-content'><p>Given two sorted integer arrays A and B, merge B into A as one sorted array.</p>
+
+<p>
+<b>Note:</b><br />
+You may assume that A has enough space to hold additional elements from B. The number of elements initialized in A and B are <i>m</i> and <i>n</i> respectively.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(88, "Merge Sorted Array"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_21' class='row-odd question-title'><b>Merge Two Sorted Lists</b></div><div class='row-odd question-content'><p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(21, "Merge Two Sorted Lists"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_111' class='row-even question-title'><b>Minimum Depth of Binary Tree</b></div><div class='row-even question-content'><p>Given a binary tree, find its minimum depth.</p>
+
+<p>The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(111, "Minimum Depth of Binary Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_64' class='row-odd question-title'><b>Minimum Path Sum</b></div><div class='row-odd question-content'><p>Given a <i>m</i> x <i>n</i> grid filled with non-negative numbers, find a path from top left to bottom right which <i>minimizes</i> the sum of all numbers along its path.</p>
+
+<p><b>Note:</b> You can only move either down or right at any point in time.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(64, "Minimum Path Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_76' class='row-even question-title'><b>Minimum Window Substring</b></div><div class='row-even question-content'><p>
+Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+</p>
+
+<p>
+For example,<br />
+<b>S</b> = <code>"ADOBECODEBANC"</code><br />
+<b>T</b> = <code>"ABC"</code><br />
+</p>
+<p>
+Minimum window is <code>"BANC"</code>.
+</p>
+
+<p>
+<b>Note:</b><br />
+If there is no such window in S that covers all characters in T, return the emtpy string <code>""</code>.
+</p>
+<p>
+If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(76, "Minimum Window Substring"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_43' class='row-odd question-title'><b>Multiply Strings</b></div><div class='row-odd question-content'><p>Given two numbers represented as strings, return multiplication of the numbers as a string.</p>
+
+<p>Note: The numbers can be arbitrarily large and are non-negative.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(43, "Multiply Strings"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_51' class='row-even question-title'><b>N-Queens</b></div><div class='row-even question-content'><p>The <i>n</i>-queens puzzle is the problem of placing <i>n</i> queens on an <i>n</i>×<i>n</i> chessboard such that no two queens attack each other.</p>
+
+<p><img src="http://www.leetcode.com/wp-content/uploads/2012/03/8-queens.png" /></p>
+
+<p>Given an integer <i>n</i>, return all distinct solutions to the <i>n</i>-queens puzzle.</p>
+
+<p>Each solution contains a distinct board configuration of the <i>n</i>-queens' placement, where <code>'Q'</code> and <code>'.'</code> both indicate a queen and an empty space respectively.</p>
+
+<p>For example,<br />
+There exist two distinct solutions to the 4-queens puzzle:</p>
+<pre>
+[
+ [".Q..",  // Solution 1
+  "...Q",
+  "Q...",
+  "..Q."],
+
+ ["..Q.",  // Solution 2
+  "Q...",
+  "...Q",
+  ".Q.."]
+]
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(51, "N-Queens"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_52' class='row-odd question-title'><b>N-Queens II</b></div><div class='row-odd question-content'><p>Follow up for N-Queens problem.</p>
+
+<p>Now, instead outputting board configurations, return the total number of distinct solutions.</p>
+
+<p><img src="http://www.leetcode.com/wp-content/uploads/2012/03/8-queens.png" /></p><a href='#' onclick='clearSavedJudgeCode(); setJudge(52, "N-Queens II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_31' class='row-even question-title'><b>Next Permutation</b></div><div class='row-even question-content'><p>
+Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+</p>
+<p>
+If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
+</p>
+<p>
+The replacement must be in-place, do not allocate extra memory.
+</p>
+<p>
+Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.<br />
+<code>1,2,3</code> &#8594; <code>1,3,2</code><br />
+<code>3,2,1</code> &#8594; <code>1,2,3</code><br />
+<code>1,1,5</code> &#8594; <code>1,5,1</code><br />
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(31, "Next Permutation"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_9' class='row-odd question-title'><b>Palindrome Number</b></div><div class='row-odd question-content'><p>Determine whether an integer is a palindrome. Do this without extra space.</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show spoilers.</a></p>
+
+<div class="spoilers"><b>Some hints:</b>
+
+<p>Could negative integers be palindromes? (ie, -1)</p>
+
+<p>If you are thinking of converting the integer to string, note the restriction of using extra space.</p>
+
+<p>You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?</p>
+
+<p>There is a more generic way of solving this problem.</p>
+
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(9, "Palindrome Number"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_86' class='row-even question-title'><b>Partition List</b></div><div class='row-even question-content'><p>Given a linked list and a value <i>x</i>, partition it such that all nodes less than <i>x</i> come before nodes greater than or equal to <i>x</i>.
+</p>
+<p>
+You should preserve the original relative order of the nodes in each of the two partitions.
+</p>
+<p>
+For example,<br />
+Given <code>1->4->3->2->5->2</code> and <i>x</i> = 3,<br />
+return <code>1->2->2->4->3->5</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(86, "Partition List"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_118' class='row-odd question-title'><b>Pascal&#039;s Triangle</b></div><div class='row-odd question-content'><p>Given <i>numRows</i>, generate the first <i>numRows</i> of Pascal's triangle.</p>
+
+<p>
+For example, given <i>numRows</i> = 5,<br />
+Return
+<pre>
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+</pre>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(118, "Pascal&#039;s Triangle"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_119' class='row-even question-title'><b>Pascal&#039;s Triangle II</b></div><div class='row-even question-content'><p>Given an index <i>k</i>, return the <i>k</i><sup>th</sup> row of the Pascal's triangle.</p>
+
+<p>
+For example, given <i>k</i> = 3,<br />
+Return <code>[1,3,3,1]</code>.
+</p>
+
+<p>
+<b>Note:</b><br />
+Could you optimize your algorithm to use only <i>O</i>(<i>k</i>) extra space?
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(119, "Pascal&#039;s Triangle II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_112' class='row-odd question-title'><b>Path Sum</b></div><div class='row-odd question-content'><p>
+Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+</p>
+
+For example:<br />
+Given the below binary tree and <code>sum = 22</code>,
+<pre>
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \      \
+        7    2      1
+</pre>
+
+<p>
+return true, as there exist a root-to-leaf path <code>5->4->11->2</code> which sum is 22.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(112, "Path Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_113' class='row-even question-title'><b>Path Sum II</b></div><div class='row-even question-content'><p>
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+</p>
+
+For example:<br />
+Given the below binary tree and <code>sum = 22</code>,
+<pre>
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+</pre>
+
+<p>
+return<br />
+<pre>
+[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+</pre>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(113, "Path Sum II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_60' class='row-odd question-title'><b>Permutation Sequence</b></div><div class='row-odd question-content'><p>The set <code>[1,2,3,&#8230;,<i>n</i>]</code> contains a total of <i>n</i>! unique permutations.</p>
+
+<p>By listing and labeling all of the permutations in order,<br />
+We get the following sequence (ie, for <i>n</i> = 3):
+<ol>
+<li><code>"123"</code></li>
+<li><code>"132"</code></li>
+<li><code>"213"</code></li>
+<li><code>"231"</code></li>
+<li><code>"312"</code></li>
+<li><code>"321"</code></li>
+</ol>
+</p>
+
+<p>Given <i>n</i> and <i>k</i>, return the <i>k</i><sup>th</sup> permutation sequence.</p>
+
+<p><b>Note:</b> Given <i>n</i> will be between 1 and 9 inclusive.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(60, "Permutation Sequence"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_46' class='row-even question-title'><b>Permutations</b></div><div class='row-even question-content'><p>
+Given a collection of numbers, return all possible permutations.
+</p>
+
+<p>
+For example,<br />
+<code>[1,2,3]</code> have the following permutations:<br />
+<code>[1,2,3]</code>, <code>[1,3,2]</code>, <code>[2,1,3]</code>, <code>[2,3,1]</code>, <code>[3,1,2]</code>, and <code>[3,2,1]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(46, "Permutations"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_47' class='row-odd question-title'><b>Permutations II</b></div><div class='row-odd question-content'><p>
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+</p>
+
+<p>
+For example,<br />
+<code>[1,1,2]</code> have the following unique permutations:<br />
+<code>[1,1,2]</code>, <code>[1,2,1]</code>, and <code>[2,1,1]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(47, "Permutations II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_66' class='row-even question-title'><b>Plus One</b></div><div class='row-even question-content'><p>Given a number represented as an array of digits, plus one to the number.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(66, "Plus One"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_116' class='row-odd question-title'><b>Populating Next Right Pointers in Each Node</b></div><div class='row-odd question-content'><p>
+Given a binary tree
+<pre>
+    struct TreeLinkNode {
+      TreeLinkNode *left;
+      TreeLinkNode *right;
+      TreeLinkNode *next;
+    }
+</pre>
+</p>
+
+<p>Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to <code>NULL</code>.</p>
+
+<p>Initially, all next pointers are set to <code>NULL</code>.</p>
+
+<p>
+<b>Note:</b>
+<ul>
+<li>You may only use constant extra space.</li>
+<li>You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).</li>
+</ul>
+</p>
+
+<p>
+For example,<br />
+Given the following perfect binary tree,<br />
+<pre>
+         1
+       /  \
+      2    3
+     / \  / \
+    4  5  6  7
+</pre>
+</p>
+<p>
+After calling your function, the tree should look like:<br />
+<pre>
+         1 -> NULL
+       /  \
+      2 -> 3 -> NULL
+     / \  / \
+    4->5->6->7 -> NULL
+</pre>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(116, "Populating Next Right Pointers in Each Node"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_117' class='row-even question-title'><b>Populating Next Right Pointers in Each Node II</b></div><div class='row-even question-content'><p>Follow up for problem "<i>Populating Next Right Pointers in Each Node</i>".</p>
+<p>What if the given tree could be any binary tree? Would your previous solution still work?</p>
+<p>
+<b>Note:</b>
+<ul><li>You may only use constant extra space.</li></ul>
+</p>
+<p>
+For example,<br />
+Given the following binary tree,<br />
+<pre>
+         1
+       /  \
+      2    3
+     / \    \
+    4   5    7
+</pre>
+</p>
+<p>
+After calling your function, the tree should look like:<br />
+<pre>
+         1 -> NULL
+       /  \
+      2 -> 3 -> NULL
+     / \    \
+    4-> 5 -> 7 -> NULL
+</pre>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(117, "Populating Next Right Pointers in Each Node II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_50' class='row-odd question-title'><b>Pow(x, n)</b></div><div class='row-odd question-content'><p>Implement pow(<i>x</i>, <i>n</i>).
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(50, "Pow(x, n)"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_99' class='row-even question-title'><b>Recover Binary Search Tree</b></div><div class='row-even question-content'><p>
+Two elements of a binary search tree (BST) are swapped by mistake.</p>
+
+<p>Recover the tree without changing its structure.
+</p>
+
+<b>Note:</b><br />
+A solution using O(<i>n</i>) space is pretty straight forward. Could you devise a constant space solution?
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(99, "Recover Binary Search Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_10' class='row-odd question-title'><b>Regular Expression Matching</b></div><div class='row-odd question-content'><p>Implement regular expression matching with support for <code>'.'</code> and <code>'*'</code>.</p>
+
+<pre>
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the <b>entire</b> input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") &#8594; false
+isMatch("aa","aa") &#8594; true
+isMatch("aaa","aa") &#8594; false
+isMatch("aa", "a*") &#8594; true
+isMatch("aa", ".*") &#8594; true
+isMatch("ab", ".*") &#8594; true
+isMatch("aab", "c*a*b") &#8594; true
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(10, "Regular Expression Matching"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_26' class='row-even question-title'><b>Remove Duplicates from Sorted Array</b></div><div class='row-even question-content'><p>
+Given a sorted array, remove the duplicates in place such that each element appear only <i>once</i> and return the new length.</p>
+
+<p>
+Do not allocate extra space for another array, you must do this in place with constant memory.
+</p>
+
+<p>
+For example,<br />
+Given input array A = <code>[1,1,2]</code>,
+</p>
+<p>
+Your function should return length = <code>2</code>, and A is now <code>[1,2]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(26, "Remove Duplicates from Sorted Array"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_80' class='row-odd question-title'><b>Remove Duplicates from Sorted Array II</b></div><div class='row-odd question-content'><p>
+Follow up for "Remove Duplicates":<br />
+What if duplicates are allowed at most <i>twice</i>?</p>
+
+<p>
+For example,<br />
+Given sorted array A = <code>[1,1,1,2,2,3]</code>,
+</p>
+<p>
+Your function should return length = <code>5</code>, and A is now <code>[1,1,2,2,3]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(80, "Remove Duplicates from Sorted Array II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_83' class='row-even question-title'><b>Remove Duplicates from Sorted List</b></div><div class='row-even question-content'><p>
+Given a sorted linked list, delete all duplicates such that each element appear only <i>once</i>.
+</p>
+<p>
+For example,<br />
+Given <code>1->1->2</code>, return <code>1->2</code>.<br />
+Given <code>1->1->2->3->3</code>, return <code>1->2->3</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(83, "Remove Duplicates from Sorted List"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_82' class='row-odd question-title'><b>Remove Duplicates from Sorted List II</b></div><div class='row-odd question-content'><p>
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only <i>distinct</i> numbers from the original list.
+</p>
+<p>
+For example,<br />
+Given <code>1->2->3->3->4->4->5</code>, return <code>1->2->5</code>.<br />
+Given <code>1->1->1->2->3</code>, return <code>2->3</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(82, "Remove Duplicates from Sorted List II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_27' class='row-even question-title'><b>Remove Element</b></div><div class='row-even question-content'><p>Given an array and a value, remove all instances of that value in place and return the new length.
+</p>
+
+<p>
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(27, "Remove Element"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_19' class='row-odd question-title'><b>Remove Nth Node From End of List</b></div><div class='row-odd question-content'><p>Given a linked list, remove the <i>n</i><sup>th</sup> node from the end of list and return its head.</p>
+
+<p>
+For example,</p>
+
+<pre>
+   Given linked list: <b>1->2->3->4->5</b>, and <b><i>n</i> = 2</b>.
+
+   After removing the second node from the end, the linked list becomes <b>1->2->3->5</b>.
+</pre>
+
+<p>
+<b>Note:</b><br />
+Given <i>n</i> will always be valid.<br />
+Try to do this in one pass.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(19, "Remove Nth Node From End of List"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_93' class='row-even question-title'><b>Restore IP Addresses</b></div><div class='row-even question-content'><p>Given a string containing only digits, restore it by returning all possible valid IP address combinations.</p>
+
+<p>
+For example:<br />
+Given <code>"25525511135"</code>,
+</p>
+<p>
+return <code>["255.255.11.135", "255.255.111.35"]</code>. (Order does not matter)
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(93, "Restore IP Addresses"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_7' class='row-odd question-title'><b>Reverse Integer</b></div><div class='row-odd question-content'><p>Reverse digits of an integer.</p>
+
+<p style="font-family:monospace">
+<b>Example1:</b> x =  123, return  321<br />
+<b>Example2:</b> x = -123, return -321
+</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show spoilers.</a></p>
+
+<div class="spoilers"><b>Have you thought about this?</b>
+
+<p>Here are some good questions to ask before coding. Bonus points for you if you have already thought through this!</p>
+
+<p>If the integer's last digit is 0, what should the output be? ie, cases such as 10, 100.</p>
+
+<p>Did you notice that the reversed integer might overflow? Assume the input is a 32-bit integer, then the reverse of 1000000003 overflows. How should you handle such cases?</p>
+
+<p>Throw an exception? Good, but what if throwing an exception is not an option? You would then have to re-design the function (ie, add an extra parameter).</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(7, "Reverse Integer"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_92' class='row-even question-title'><b>Reverse Linked List II</b></div><div class='row-even question-content'><p>
+Reverse a linked list from position <i>m</i> to <i>n</i>. Do it in-place and in one-pass.
+</p>
+
+<p>
+For example:<br />
+Given <code>1->2->3->4->5->NULL</code>, <i>m</i> = 2 and <i>n</i> = 4,
+</p>
+<p>
+return <code>1->4->3->2->5->NULL</code>.
+</p>
+<p>
+<b>Note:</b><br />
+Given <i>m</i>, <i>n</i> satisfy the following condition:<br />
+1 &#8804; <i>m</i> &#8804; <i>n</i> &#8804; length of list.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(92, "Reverse Linked List II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_25' class='row-odd question-title'><b>Reverse Nodes in k-Group</b></div><div class='row-odd question-content'><p>
+Given a linked list, reverse the nodes of a linked list <i>k</i> at a time and return its modified list.
+</p>
+
+<p>
+If the number of nodes is not a multiple of <i>k</i> then left-out nodes in the end should remain as it is.</p>
+
+<p>You may not alter the values in the nodes, only nodes itself may be changed.</p>
+
+<p>Only constant memory is allowed.</p>
+
+<p>
+For example,<br />
+Given this linked list: <code>1->2->3->4->5</code>
+</p>
+
+<p>
+For <i>k</i> = 2, you should return: <code>2->1->4->3->5</code>
+</p>
+
+<p>
+For <i>k</i> = 3, you should return: <code>3->2->1->4->5</code>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(25, "Reverse Nodes in k-Group"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_13' class='row-even question-title'><b>Roman to Integer</b></div><div class='row-even question-content'><p>Given a roman numeral, convert it to an integer.</p>
+
+<p>Input is guaranteed to be within the range from 1 to 3999.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(13, "Roman to Integer"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_48' class='row-odd question-title'><b>Rotate Image</b></div><div class='row-odd question-content'><p>You are given an <i>n</i> x <i>n</i> 2D matrix representing an image.</p>
+<p>Rotate the image by 90 degrees (clockwise).</p>
+<p>Follow up:<br />
+Could you do this in-place?</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(48, "Rotate Image"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_61' class='row-even question-title'><b>Rotate List</b></div><div class='row-even question-content'><p>Given a list, rotate the list to the right by <i>k</i> places, where <i>k</i> is non-negative.</p>
+
+<p>For example:<br />
+Given <code>1->2->3->4->5->NULL</code> and <i>k</i> = <code>2</code>,<br />
+return <code>4->5->1->2->3->NULL</code>.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(61, "Rotate List"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_100' class='row-odd question-title'><b>Same Tree</b></div><div class='row-odd question-content'><p>
+Given two binary trees, write a function to check if they are equal or not.
+</p>
+
+<p>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(100, "Same Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_87' class='row-even question-title'><b>Scramble String</b></div><div class='row-even question-content'><p>
+Given a string <i>s1</i>, we may represent it as a binary tree by partitioning it to two non-empty substrings recursively.
+</p>
+<p>
+Below is one possible representation of <i>s1</i> = <code>"great"</code>:
+</p>
+<pre>
+    great
+   /    \
+  gr    eat
+ / \    /  \
+g   r  e   at
+           / \
+          a   t
+</pre>
+<p>
+To scramble the string, we may choose any non-leaf node and swap its two children.
+</p>
+<p>
+For example, if we choose the node <code>"gr"</code> and swap its two children, it produces a scrambled string <code>"rgeat"</code>.
+</p>
+<pre>
+    rgeat
+   /    \
+  rg    eat
+ / \    /  \
+r   g  e   at
+           / \
+          a   t
+</pre>
+<p>
+We say that <code>"rgeat"</code> is a scrambled string of <code>"great"</code>.
+</p>
+<p>
+Similarly, if we continue to swap the children of nodes <code>"eat"</code> and <code>"at"</code>, it produces a scrambled string <code>"rgtae"</code>.
+</p>
+<pre>
+    rgtae
+   /    \
+  rg    tae
+ / \    /  \
+r   g  ta  e
+       / \
+      t   a
+</pre>
+<p>
+We say that <code>"rgtae"</code> is a scrambled string of <code>"great"</code>.
+</p>
+<p>
+Given two strings <i>s1</i> and <i>s2</i> of the same length, determine if <i>s2</i> is a scrambled string of <i>s1</i>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(87, "Scramble String"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_74' class='row-odd question-title'><b>Search a 2D Matrix</b></div><div class='row-odd question-content'><p>Write an efficient algorithm that searches for a value in an <i>m</i> x <i>n</i> matrix. This matrix has the following properties:</p>
+
+<p>
+<ul>
+<li>Integers in each row are sorted from left to right.</li>
+<li>The first integer of each row is greater than the last integer of the previous row.</li>
+</ul>
+</p>
+
+<p>
+For example,</p>
+<p>
+Consider the following matrix:
+</p>
+<pre>
+[
+  [1,   3,  5,  7],
+  [10, 11, 16, 20],
+  [23, 30, 34, 50]
+]
+</pre>
+
+<p>Given <b>target</b> = <code>3</code>, return <code>true</code>.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(74, "Search a 2D Matrix"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_34' class='row-even question-title'><b>Search for a Range</b></div><div class='row-even question-content'><p>Given a sorted array of integers, find the starting and ending position of a given target value.</p>
+
+<p>Your algorithm's runtime complexity must be in the order of <i>O</i>(log <i>n</i>).</p>
+
+<p>If the target is not found in the array, return <code>[-1, -1]</code>.</p>
+
+<p>
+For example,<br />
+Given <code>[5, 7, 7, 8, 8, 10]</code> and target value 8,<br />
+return <code>[3, 4]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(34, "Search for a Range"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_33' class='row-odd question-title'><b>Search in Rotated Sorted Array</b></div><div class='row-odd question-content'><p>Suppose a sorted array is rotated at some pivot unknown to you beforehand.</p>
+
+<p>(i.e., <code>0 1 2 4 5 6 7</code> might become <code>4 5 6 7 0 1 2</code>).</p>
+
+<p>You are given a target value to search. If found in the array return its index, otherwise return -1.</p>
+
+<p>You may assume no duplicate exists in the array.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(33, "Search in Rotated Sorted Array"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_81' class='row-even question-title'><b>Search in Rotated Sorted Array II</b></div><div class='row-even question-content'><p>Follow up for "Search in Rotated Sorted Array":<br />
+What if <i>duplicates</i> are allowed?</p>
+
+<p>Would this affect the run-time complexity? How and why?</p>
+
+<p>Write a function to determine if a given target is in the array.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(81, "Search in Rotated Sorted Array II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_35' class='row-odd question-title'><b>Search Insert Position</b></div><div class='row-odd question-content'><p>Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.</p>
+
+<p>You may assume no duplicates in the array.</p>
+
+<p>
+Here are few examples.<br />
+<code>[1,3,5,6]</code>, 5 &#8594; 2<br />
+<code>[1,3,5,6]</code>, 2 &#8594; 1<br />
+<code>[1,3,5,6]</code>, 7 &#8594; 4<br />
+<code>[1,3,5,6]</code>, 0 &#8594; 0
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(35, "Search Insert Position"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_73' class='row-even question-title'><b>Set Matrix Zeroes</b></div><div class='row-even question-content'><p>
+Given a <i>m</i> x <i>n</i> matrix, if an element is 0, set its entire row and column to 0. Do it in place.
+</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show follow up.</a></p>
+
+<div class="spoilers"><b>Follow up:</b>
+
+<p>
+Did you use extra space?<br />
+A straight forward solution using O(<i>m</i><i>n</i>) space is probably a bad idea.<br />
+A simple improvement uses O(<i>m</i> + <i>n</i>) space, but still not the best solution.<br />
+Could you devise a constant space solution?
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(73, "Set Matrix Zeroes"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_71' class='row-odd question-title'><b>Simplify Path</b></div><div class='row-odd question-content'><p>Given an absolute path for a file (Unix-style), simplify it.</p>
+
+<p>For example,<br />
+<b>path</b> = <code>"/home/"</code>, => <code>"/home"</code><br />
+<b>path</b> = <code>"/a/./b/../../c/"</code>, => <code>"/c"</code><br />
+</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show corner cases.</a></p>
+
+<div class="spoilers"><b>Corner Cases:</b>
+
+<p>
+<ul>
+<li>Did you consider the case where <b>path</b> = <code>"/../"</code>?<br />
+In this case, you should return <code>"/"</code>.</li>
+<li>Another corner case is the path might contain multiple slashes <code>'/'</code> together, such as <code>"/home//foo/"</code>.<br />
+In this case, you should ignore redundant slashes and return <code>"/home/foo"</code>.</li>
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(71, "Simplify Path"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_75' class='row-even question-title'><b>Sort Colors</b></div><div class='row-even question-content'><p>
+Given an array with <i>n</i> objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+</p>
+
+<p>
+Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
+</p>
+
+<p>
+<b>Note:</b><br />
+You are not suppose to use the library's sort function for this problem.
+</p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show follow up.</a></p>
+
+<div class="spoilers">
+<p><b>Follow up:</b><br />
+A rather straight forward solution is a two-pass algorithm using counting sort.<br />
+First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's.</p>
+<p>Could you come up with an one-pass algorithm using only constant space?<br />
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(75, "Sort Colors"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_54' class='row-odd question-title'><b>Spiral Matrix</b></div><div class='row-odd question-content'><p>Given a matrix of <i>m</i> x <i>n</i> elements (<i>m</i> rows, <i>n</i> columns), return all elements of the matrix in spiral order.
+</p>
+
+<p>
+For example,<br />
+Given the following matrix:
+</p>
+<pre>
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+</pre>
+<p>
+You should return <code>[1,2,3,6,9,8,7,4,5]</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(54, "Spiral Matrix"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_59' class='row-even question-title'><b>Spiral Matrix II</b></div><div class='row-even question-content'><p>Given an integer <i>n</i>, generate a square matrix filled with elements from 1 to <i>n</i><sup>2</sup> in spiral order.</p>
+
+<p>
+For example,<br />
+Given <i>n</i> = <code>3</code>,
+</p>
+You should return the following matrix:
+<pre>
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(59, "Spiral Matrix II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_69' class='row-odd question-title'><b>Sqrt(x)</b></div><div class='row-odd question-content'><p>Implement <code>int sqrt(int x)</code>.</p>
+
+<p>Compute and return the square root of <i>x</i>.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(69, "Sqrt(x)"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_8' class='row-even question-title'><b>String to Integer (atoi)</b></div><div class='row-even question-content'><p>Implement <span style="font-family:monospace">atoi</span> to convert a string to an integer.</p>
+
+<p><b>Hint:</b> Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.</p>
+
+<p>
+<b>Notes:</b> 
+It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front. </p>
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">spoilers alert... click to show requirements for atoi.</a></p>
+
+<div class="spoilers"><b>Requirements for atoi:</b>
+
+<p>The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.</p>
+
+<p>The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.</p>
+
+<p>If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.</p>
+
+<p>If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(8, "String to Integer (atoi)"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_78' class='row-odd question-title'><b>Subsets</b></div><div class='row-odd question-content'><p>
+Given a set of distinct integers, <i>S</i>, return all possible subsets.
+</p>
+<p><b>Note:</b><br />
+<ul>
+<li>Elements in a subset must be in non-descending order.</li>
+<li>The solution set must not contain duplicate subsets.</li>
+</ul>
+</p>
+<p>
+For example,<br />
+If <b><i>S</i></b> = <code>[1,2,3]</code>, a solution is:
+</p>
+
+<pre>
+[
+  [3],
+  [1],
+  [2],
+  [1,2,3],
+  [1,3],
+  [2,3],
+  [1,2],
+  []
+]
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(78, "Subsets"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_90' class='row-even question-title'><b>Subsets II</b></div><div class='row-even question-content'><p>
+Given a collection of integers that might contain duplicates, <i>S</i>, return all possible subsets.
+</p>
+<p><b>Note:</b><br />
+<ul>
+<li>Elements in a subset must be in non-descending order.</li>
+<li>The solution set must not contain duplicate subsets.</li>
+</ul>
+</p>
+<p>
+For example,<br />
+If <b><i>S</i></b> = <code>[1,2,2]</code>, a solution is:
+</p>
+
+<pre>
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(90, "Subsets II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_30' class='row-odd question-title'><b>Substring with Concatenation of All Words</b></div><div class='row-odd question-content'><p>
+You are given a string, <b>S</b>, and a list of words, <b>L</b>, that are all of the same length. Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.
+</p>
+
+<p>
+For example, given:<br />
+<b>S</b>: <code>"barfoothefoobarman"</code><br />
+<b>L</b>: <code>["foo", "bar"]</code>
+</p>
+
+<p>
+You should return the indices: <code>[0,9]</code>.<br />
+(order does not matter).
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(30, "Substring with Concatenation of All Words"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_37' class='row-even question-title'><b>Sudoku Solver</b></div><div class='row-even question-content'><p>Write a program to solve a Sudoku puzzle by filling the empty cells.</p>
+
+<p>Empty cells are indicated by the character <code>'.'</code>.</p>
+
+<p>You may assume that there will be only one unique solution.</code>
+
+<p>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png" /><br />
+<p style="font-size: 11px">A sudoku puzzle...</p>
+</p>
+
+<p>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png" /><br />
+<p style="font-size: 11px">...and its solution numbers marked in red.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(37, "Sudoku Solver"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_24' class='row-odd question-title'><b>Swap Nodes in Pairs</b></div><div class='row-odd question-content'><p>
+Given a linked list, swap every two adjacent nodes and return its head.
+</p>
+
+<p>
+For example,<br />
+Given <code>1->2->3->4</code>, you should return the list as <code>2->1->4->3</code>.
+</p>
+
+<p>
+Your algorithm should use only constant space. You may <b>not</b> modify the values in the list, only nodes itself can be changed.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(24, "Swap Nodes in Pairs"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_101' class='row-even question-title'><b>Symmetric Tree</b></div><div class='row-even question-content'><p>Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).</p>
+
+<p>
+For example, this binary tree is symmetric:
+<pre>
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+</pre>
+</p>
+<p>
+But the following is not:<br />
+<pre>
+    1
+   / \
+  2   2
+   \   \
+   3    3
+</pre>
+</p>
+
+<p>
+<b>Note:</b><br />
+Bonus points if you could solve it both recursively and iteratively.
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(101, "Symmetric Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_68' class='row-odd question-title'><b>Text Justification</b></div><div class='row-odd question-content'><p>
+Given an array of words and a length <i>L</i>, format the text such that each line has exactly <i>L</i> characters and is fully (left and right) justified.
+</p> 
+
+<p>
+You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces <code>' '</code> when necessary so that each line has exactly <i>L</i> characters.
+</p>
+
+<p>
+Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
+</p>
+
+<p>
+For the last line of text, it should be left justified and no extra space is inserted between words.
+</p>
+
+<p>
+For example,<br />
+<b>words</b>: <code>["This", "is", "an", "example", "of", "text", "justification."]</code><br />
+<b>L</b>: <code>16</code>.
+</p>
+
+<p>
+Return the formatted lines as:<br />
+<pre>
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+</pre>
+</p>
+
+<p>
+<b>Note:</b> Each word is guaranteed not to exceed <i>L</i> in length.
+</p>
+
+
+<p class="showspoilers"><a href="#" onclick="showSpoilers(this); return false;">click to show corner cases.</a></p>
+
+<div class="spoilers"><b>Corner Cases:</b>
+<p>
+<ul>
+<li>A line other than the last line might contain only one word. What should you do in this case?<br />
+In this case, that line should be left-justified.</li>
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(68, "Text Justification"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_42' class='row-even question-title'><b>Trapping Rain Water</b></div><div class='row-even question-content'><p>
+Given <i>n</i> non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. 
+</p>
+
+<p>
+For example, <br />
+Given <code>[0,1,0,2,1,0,1,3,2,1,2,1]</code>, return <code>6</code>.
+</p>
+
+<p>
+<img src="http://www.leetcode.com/wp-content/uploads/2012/08/rainwatertrap.png" /><br />
+<p style="font-size: 11px">The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. <b>Thanks Marcos</b> for contributing this image!</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(42, "Trapping Rain Water"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_120' class='row-odd question-title'><b>Triangle</b></div><div class='row-odd question-content'><p>Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.</p>
+
+<p>
+For example, given the following triangle<br />
+<pre>
+[
+     [<font color="red">2</font>],
+    [<font color="red">3</font>,4],
+   [6,<font color="red">5</font>,7],
+  [4,<font color="red">1</font>,8,3]
+]
+</pre>
+</p>
+<p>
+The minimum path sum from top to bottom is <code>11</code> (i.e., <font color="red">2</font> + <font color="red">3</font> + <font color="red">5</font> + <font color="red">1</font> = 11).
+</p>
+
+<p>
+<b>Note:</b><br />
+Bonus point if you are able to do this using only <i>O</i>(<i>n</i>) extra space, where <i>n</i> is the total number of rows in the triangle.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(120, "Triangle"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_1' class='row-even question-title'><b>Two Sum</b></div><div class='row-even question-content'><p>Given an array of integers, find two numbers such that they add up to a specific target number.</p>
+
+<p>The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.</p>
+
+<p>You may assume that each input would have exactly one solution.</p>
+
+<p style="font-family:monospace">
+<b>Input:</b> numbers={2, 7, 11, 15}, target=9<br />
+<b>Output:</b> index1=1, index2=2
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(1, "Two Sum"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_96' class='row-odd question-title'><b>Unique Binary Search Trees</b></div><div class='row-odd question-content'><p>Given <i>n</i>, how many structurally unique <b>BST's</b> (binary search trees) that store values 1...<i>n</i>?</p>
+
+<p>
+For example,<br />
+Given <i>n</i> = 3, there are a total of 5 unique BST's.
+
+<pre>
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+</pre>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(96, "Unique Binary Search Trees"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_95' class='row-even question-title'><b>Unique Binary Search Trees II</b></div><div class='row-even question-content'><p>Given <i>n</i>, generate all structurally unique <b>BST's</b> (binary search trees) that store values 1...<i>n</i>.</p>
+
+<p>
+For example,<br />
+Given <i>n</i> = 3, your program should return all 5 unique BST's shown below.
+
+<pre>
+   1         3     3      2      1
+    \       /     /      / \      \
+     3     2     1      1   3      2
+    /     /       \                 \
+   2     1         2                 3
+</pre>
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(95, "Unique Binary Search Trees II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_62' class='row-odd question-title'><b>Unique Paths</b></div><div class='row-odd question-content'><p>A robot is located at the top-left corner of a <i>m</i> x <i>n</i> grid (marked 'Start' in the diagram below).</p>
+
+<p>The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).</p>
+
+<p>How many possible unique paths are there?</p>
+
+<p>
+<img src="http://4.bp.blogspot.com/_UElib2WLeDE/TNJf8VtC2VI/AAAAAAAACXU/UyUa-9LKp4E/s400/robot_maze.png" /><br />
+<p style="font-size: 11px">Above is a 3 x 7 grid. How many possible unique paths are there?
+</p>
+
+<p><b>Note:</b> <i>m</i> and <i>n</i> will be at most 100.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(62, "Unique Paths"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_63' class='row-even question-title'><b>Unique Paths II</b></div><div class='row-even question-content'><p>Follow up for "Unique Paths":</p>
+
+<p>Now consider if some obstacles are added to the grids. How many unique paths would there be?</p>
+
+<p>An obstacle and empty space is marked as <code>1</code> and <code>0</code> respectively in the grid.</p>
+
+<p>For example,<br />
+<p>There is one obstacle in the middle of a 3x3 grid as illustrated below.</p>
+<pre>
+[
+  [0,0,0],
+  [0,1,0],
+  [0,0,0]
+]
+</pre>
+<p>The total number of unique paths is <code>2</code>.</p>
+
+<p><b>Note:</b> <i>m</i> and <i>n</i> will be at most 100.</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(63, "Unique Paths II"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_65' class='row-odd question-title'><b>Valid Number</b></div><div class='row-odd question-content'><p>Validate if a given string is numeric.</p>
+
+<p>
+Some examples:<br />
+<code>"0"</code> => <code>true</code><br />
+<code>"   0.1  "</code> => <code>true</code><br />
+<code>"abc"</code> => <code>false</code><br />
+<code>"1 a"</code> => <code>false</code><br />
+<code>"2e10"</code> => <code>true</code><br />
+</p>
+
+<p><b>Note:</b> It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(65, "Valid Number"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_20' class='row-even question-title'><b>Valid Parentheses</b></div><div class='row-even question-content'><p>Given a string containing just the characters <code>'('</code>, <code>')'</code>, <code>'{'</code>, <code>'}'</code>, <code>'['</code> and <code>']'</code>, determine if the input string is valid.</p>
+
+<p>The brackets must close in the correct order, <code>"()"</code> and <code>"()[]{}"</code> are all valid but <code>"(]"</code> and <code>"([)]"</code> are not.</p>
+<a href='#' onclick='clearSavedJudgeCode(); setJudge(20, "Valid Parentheses"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_36' class='row-odd question-title'><b>Valid Sudoku</b></div><div class='row-odd question-content'><p>Determine if a Sudoku is valid, according to: <a href="http://sudoku.com.au/TheRules.aspx">Sudoku Puzzles - The Rules</a>.</p>
+
+<p>The Sudoku board could be partially filled, where empty cells are filled with the character <code>'.'</code>.</p>
+
+<p>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png" /><br />
+<p style="font-size: 11px">A partially filled sudoku which is valid.</p>
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(36, "Valid Sudoku"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_98' class='row-even question-title'><b>Validate Binary Search Tree</b></div><div class='row-even question-content'><p>
+Given a binary tree, determine if it is a valid binary search tree (BST).
+</p>
+
+<p>
+Assume a BST is defined as follows:
+<ul>
+<li>The left subtree of a node contains only nodes with keys <b>less than</b> the node's key.</li>
+<li>The right subtree of a node contains only nodes with keys <b>greater than</b> the node's key.</li>
+<li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
+</p>
+
+<p class="showspoilers">confused what <code>"{1,#,2,3}"</code> means? <a href="#" onclick="showSpoilers(this); return false;">> read more on how binary tree is serialized on OJ.</a></p>
+
+<div class="spoilers"><br /><b>OJ's Binary Tree Serialization:</b>
+<p>
+The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+</p>
+<p>
+Here's an example:<br />
+<pre>
+   1
+  / \
+ 2   3
+    /
+   4
+    \
+     5
+</pre>
+The above binary tree is serialized as <code>"{1,2,3,#,#,4,#,#,5}"</code>. 
+</p>
+</div><a href='#' onclick='clearSavedJudgeCode(); setJudge(98, "Validate Binary Search Tree"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_44' class='row-odd question-title'><b>Wildcard Matching</b></div><div class='row-odd question-content'><p>Implement wildcard pattern matching with support for <code>'?'</code> and <code>'*'</code>.</p>
+
+<pre>
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+
+The matching should cover the <b>entire</b> input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c*a*b") → false
+</pre><a href='#' onclick='clearSavedJudgeCode(); setJudge(44, "Wildcard Matching"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_79' class='row-even question-title'><b>Word Search</b></div><div class='row-even question-content'><p>
+Given a 2D board and a word, find if the word exists in the grid.
+</p>
+<p>
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+</p>
+
+<p>
+For example,<br />
+Given <b>board</b> = 
+<pre>
+[
+  ["ABCE"],
+  ["SFCS"],
+  ["ADEE"]
+]
+</pre>
+
+<b>word</b> = <code>"ABCCED"</code>, -> returns <code>true</code>,<br />
+<b>word</b> = <code>"SEE"</code>, -> returns <code>true</code>,<br />
+<b>word</b> = <code>"ABCB"</code>, -> returns <code>false</code>.<br />
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(79, "Word Search"); openConsole(); return false;'>&#187; Solve this problem</a></div></div><div><div id='question_6' class='row-odd question-title'><b>ZigZag Conversion</b></div><div class='row-odd question-content'><p>
+The string <code>"PAYPALISHIRING"</code> is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+<pre>
+P   A   H   N
+A P L S I I G
+Y   I   R
+</pre>
+
+And then read line by line: <code>"PAHNAPLSIIGYIR"</code></p>
+
+<p>
+Write the code that will take a string and make this conversion given a number of rows:
+
+<pre>string convert(string text, int nRows);</pre>
+
+<code>convert("PAYPALISHIRING", 3)</code> should return <code>"PAHNAPLSIIGYIR"</code>.
+</p><a href='#' onclick='clearSavedJudgeCode(); setJudge(6, "ZigZag Conversion"); openConsole(); return false;'>&#187; Solve this problem</a></div></div></div></div>
+
+						
+					</div>
+
+				</div>
+
+			
+		</div><!-- .page -->
+
+		
+		</div><!-- .padder -->
+	</div><!-- #content -->
+
+	<div id="post-dir-search" class="dir-search">
+	
+<form role="search" method="get" id="searchform" action="http://www.leetcode.com/">
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+
+	</form>
+
+</div><!-- #post-dir-search -->
+
+
+<div id="sidebar">
+	<div class="padder">
+
+	
+						
+	
+	</div><!-- .padder -->
+</div><!-- #sidebar -->
+
+
+			</div> <!-- #container -->
+			
+			<div id="push"></div>
+		
+		</div><!-- #wrapper -->
+
+					
+			<div id="footer">
+			
+				<div id="colophon">
+						    	
+		    	<div id="footer-links">
+			    	
+			    	<ul class="footer-menu">
+															<li class="page_item page-item-2"><a href="http://www.leetcode.com/about" title="About Us">About Us</a></li>
+<li class="page_item page-item-908"><a href="http://www.leetcode.com/activity" title="Activity">Activity</a></li>
+<li class="page_item page-item-910"><a href="http://www.leetcode.com/forums" title="Forums">Forums</a></li>
+<li class="page_item page-item-909"><a href="http://www.leetcode.com/groups" title="Groups">Groups</a></li>
+<li class="page_item page-item-370 current_page_item"><a href="http://www.leetcode.com/onlinejudge" title="Interview Questions Online Judge">Interview Questions Online Judge</a></li>
+<li class="page_item page-item-907"><a href="http://www.leetcode.com/members" title="Members">Members</a></li>
+													</ul>
+			    	
+		    	</div>
+		    	
+		    	<div id="credits">
+			    	<p>Copyright &copy; 2012 LeetCode &nbsp;&middot;&nbsp; <a href="http://www.buddyboss.com/" target="_blank">BuddyPress Themes by BuddyBoss</a> &nbsp;&middot;&nbsp; <a href="http://www.leetcode.com/wp-login.php">Log in</a></p>
+		    	</div>
+	
+								
+				</div>
+				
+			</div><!-- #footer -->
+		
+			
+		<!-- required to load the BuddyBar -->
+		<div id="wp-admin-bar"><div class="padder"><a href="http://www.leetcode.com" id="admin-bar-logo">LeetCode</a><ul class="main-nav"><li class="bp-login no-arrow"><a href="http://www.leetcode.com/wp-login.php?redirect_to=http%3A%2F%2Fwww.leetcode.com">Log In</a></li><li class="bp-signup no-arrow"><a href="http://www.leetcode.com/register/">Sign Up</a></li></ul></div></div><!-- #wp-admin-bar -->
+
+
+<!-- Generated in 0.536 seconds. (40 q) -->
+
+	<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushClojure.js?ver=20090602'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushFSharp.js?ver=20091003'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushLatex.js?ver=20090613'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushMatlabKey.js?ver=20091209'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushObjC.js?ver=20091207'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushR.js?ver=20100919'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.leetcode.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.defaults['wrap-lines'] = false;
+	SyntaxHighlighter.all();
+</script>
+		
+		<!-- append buddyboss_wall log if needed -->
+				
+			<div class="buddyboss_log">
+						</div> 
+		
+	<!-- Beginning of Custom JavaScript. Put all custom JS scripts just before </body> to speed up page loading! -->
+        <!-- Console Panel -->
+                <script type="text/javascript" src="/code_engine/assert.js"></script>
+        <script src='/code_engine/jquery.scrollTo-min.js' type='text/javascript'></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/base/jquery-ui.css"/>
+        <script src='/code_engine/init.console.js?ver=1.6.4.4' type='text/javascript'></script>
+        
+
+        <!-- Google Analytics will only be included in live server -->
+        	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6849839-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+        
+	<!-- Enable reply box to display simple instructions on how to paste code.  -->
+	<style type="text/css">
+		.defaultCommentText { color: #a1a1a1; font-style: italic; }
+	</style>
+	<script type="text/javascript">
+		jQuery("textarea#comment, textarea#reply_text").focus(function(srcc) {
+			if (jQuery(this).val() == jQuery(this)[0].title) {
+				jQuery(this).val("");
+				jQuery(this).removeClass("defaultCommentText");
+			}
+		});
+		jQuery("textarea#comment, textarea#reply_text").blur(function() {
+			if (jQuery(this).val() == "") {
+				jQuery(this).val(jQuery(this)[0].title);
+				jQuery(this).addClass("defaultCommentText");
+			}
+		});
+		jQuery("textarea#comment, textarea#reply_text").attr('title', 'To embed your code, please use [code]your code here[/code].');
+		jQuery("textarea#comment, textarea#reply_text").blur();
+	</script>
+
+	</body>
+
+</html>
+<!-- This Quick Cache file was built for (  www.leetcode.com/onlinejudge ) in 0.54127 seconds, on Dec 19th, 2012 at 3:54 am UTC. -->
+<!-- This Quick Cache file will automatically expire ( and be re-built automatically ) on Dec 19th, 2012 at 4:54 am UTC -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Quick Cache Is Fully Functional :-) ... A Quick Cache file was just served for (  www.leetcode.com/onlinejudge ) in 0.00119 seconds, on Dec 19th, 2012 at 4:08 am UTC. -->
