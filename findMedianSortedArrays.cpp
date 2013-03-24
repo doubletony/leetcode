@@ -1,93 +1,76 @@
+
 class Solution {
 public:
-        
-    int getNumOfSmaller(int a[], int n, int val)
-    {
-        // return the number of elements that are smaller than val
-        if ( n == 0)
-        {
-            return 0;
-        }
-        int front = 0;
 
+    int getSmallerCounter(int A[], int n, int val)
+    {
+        // counter the number that is strictly smaller than val
+        int start = 0;
+        int end = n - 1;
+        int counter = -1;
+        while ( start <= end )
+        {
+            int mid = (start + end) / 2;
+            if ( A[mid] >= val)
+            {
+                end = mid - 1;
+            }
+            else if ( A[mid] < val)
+            {
+                counter = mid;
+                start = mid + 1;
+            }
+        }
+        return counter + 1;
     }
 
-    int searchInOneArray(int A[], int m, int B[], int n, int k)
+    int findKinArray(int A[], int m, int B[], int n, int k, bool &status)
     {
-        //return the val if found the idx of k-the element, otherwise, return -1;
-        // and always searching in the array A.
-        int cAA, cAB;
-        int idxA;
         int start, end;
         start = 0;
         end = m - 1;
-        idxA = m /2;
-        int endIDA = m;
-        int endIDB = n;
-        if ( m > 0)
+        int ret = -1;
+        while (  start <= end)
         {
-            while(start < end)
+            int mid = (start+end)/ 2;
+            int va = A[mid];
+            int counterA = getSmallerCounter(A, m, va) + getSmallerCounter(B, n, va);
+            if ( counterA == (k-1))
             {
-                cAA = getNumOfSmaller(A, endIDA, A[idxA]);
-                cAB = getNumOfSmaller(B, endIDB, A[idxA]);
-                if ( cAA + cAB > k)
-                {
-                    endIDA = cAA;
-                    endIDB = cAB;
-                    end = idxA;
-                    idxA = (start + end) / 2;
-                }
-                else if ( cAA + cAB < k )
-                {
-                    start = idxA;
-                    idxA = (start + end) / 2;
-                }
-                else
-                {
-                    // found it
-                    return idxA;
-                }
+                status = true;
+                return va;
+            }
+            else if ( counterA >= k)
+                end = mid - 1;
+            else
+            {
+                ret = A[mid];
+                start = mid + 1;
             }
         }
-        else
-        {
-            return -1;
-        }
-        return -1;
+        status = false;
+        return ret;
     }
 
-    int findKelement(int A[], int m, int B[], int n, int k)
+    int findKth(int A[], int m, int B[], int n, int k)
     {
-        int idx = searchInOneArray(A, m, B, n, k);
-        if (idx != -1)
-        {
-            return A[idx];
-        }
-
-        idx = searchInOneArray(B, n, A, m, k);
-        if (idx != -1)
-        {
-            return B[idx];
-        }
-        return -1; // what the hell?
+        int ra,rb;
+        bool ba,bb;
+        ra = findKinArray(A,m,B,n,k,ba);
+        rb = findKinArray(B,n,A,m,k,bb);
+        if ( bb ) return rb;
+        if ( ra == -1) return rb;
+        if ( ra < rb ) return rb;
+        return ra;
     }
 
     double findMedianSortedArrays(int A[], int m, int B[], int n) {
         // Start typing your C/C++ solution below
         // DO NOT write int main() function
-        
-        if ( ( (m + n) % 2 ) == 1)
-        {
-            int k = (m+n+1) / 2;
-            return double(findKelement(A,  m, B, n, k)  );
-        }
+
+        if ( ( (m+n) % 2) != 0)
+            return double( findKth(A,m,B,n, (m+n+1)/2) ) ;
         else
-        {
-            int k = (m+n) / 2;
-            int m1, m2;
-            m1 = findKelement(A,  m, B, n, k);
-            m2 = findKelement(A,  m, B, n, k - 1);
-            return (m1*1.0 + m2*1.0) / 2.0;
-        }
+            return 0.5 * (double( findKth(A,m,B,n, (m+n)/2) ) + double( findKth(A,m,B,n, (m+n)/2 + 1) )) ;
     }
 };
